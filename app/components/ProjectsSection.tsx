@@ -77,7 +77,7 @@ export default function ProjectsSection() {
 										/>
 									</div>
 									<div className="flex flex-col sm:flex-row justify-center gap-4 mx-8">
-										<a href="#" target="_blank" rel="noopener noreferrer" className="text-white transition-colors px-4 py-4 rounded-md hover:bg-gray-800 flex"><Image
+										<a href="https://drive.google.com/file/d/152atCiizaHH5Xa1yO2RXZmtXHXSxnHhw/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-white transition-colors px-4 py-4 rounded-md hover:bg-gray-800 flex"><Image
 											priority
 											src='/video-light.svg'
 											alt="Video Icon"
@@ -162,7 +162,7 @@ export default function ProjectsSection() {
 										/>
 									</div>
 									<div className="flex flex-col sm:flex-row justify-center gap-4 mx-8">
-										<a href="#" target="_blank" rel="noopener noreferrer" className="text-white transition-colors px-4 py-4 rounded-md hover:bg-gray-800 flex"><Image
+										<a href="https://drive.google.com/file/d/1SCH6CilwX9Tlhzdha3L1zRWPJH70Ftvx/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-white transition-colors px-4 py-4 rounded-md hover:bg-gray-800 flex"><Image
 											priority
 											src='/video-light.svg'
 											alt="Video Icon"
@@ -170,7 +170,7 @@ export default function ProjectsSection() {
 											height={15}
 										/>&nbsp;Project (Video)
 										</a>
-										<a href="#" target="_blank" rel="noopener noreferrer" className="text-white transition-colors px-4 py-4 rounded-md hover:bg-gray-800 flex"><Image
+										<a href="https://drive.google.com/file/d/1LTZm2fd_9FFxEwgh62dVKOWKLId7NgT0/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-white transition-colors px-4 py-4 rounded-md hover:bg-gray-800 flex"><Image
 											priority
 											src='/video-light.svg'
 											alt="Video Icon"
