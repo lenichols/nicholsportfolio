@@ -183,6 +183,83 @@ export default function ProjectsSection() {
 							</div>
 						</div>
 					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800"
+					>
+						<div className="p-8">
+							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+								<div className="space-y-6">
+									<div>
+										<h3 className="text-2xl font-bold mb-4">Cost Optimization&nbsp;<span className="text-purple-500">- 08/2024</span></h3>
+										<p className="text-gray-400">
+											Enterprise level cost optimization strategy implementing service level changes into AWS driving a nearly $60,000 a month cost reduction. This project involved reducing infrastructure and scaling down using traffic mitigation and rate logging and limit utilization of AWS services to optimize costs.
+										</p>
+									</div>
+
+									<div className="grid grid-cols-2 gap-6">
+										<div>
+											<h4 className="text-sm font-semibold text-blue-400 mb-3">Frontend Features</h4>
+											<ul className="space-y-2 text-sm text-gray-400">
+												<li>• Complete Infrastructure Analysis</li>
+												<li>• Service Level Review</li>
+												<li>• Redesign & Implementation</li>
+												<li>• API Changes/Load Balancing</li>
+												<li>• Support Downgrades</li>
+												<li>• ISO 27001 Modifications</li>
+												<li>• Fullstack code changes</li>
+											</ul>
+										</div>
+									</div>
+
+									<div className="space-y-3">
+										<h4 className="text-sm font-semibold text-teal-400">Performance Metrics</h4>
+										<ul className="space-y-2 text-sm text-gray-400">
+											<li>• Moderatizzed traffic and saved resources</li>
+											<li>• Data Cleanup Implemented</li>
+										</ul>
+									</div>
+								</div>
+
+								<div className="bg-black/30 rounded-xl p-6">
+									<h4 className="text-sm font-semibold text-gray-400 mb-4">Cost Optimization Table</h4>
+									<div className="aspect-[4/3] bg-black/50 rounded-lg p-4">
+										<Image
+											priority
+											src='/QuizQueue.drawio.svg'
+											alt="QuizQueue"
+											className="rounded-md"
+											width={0}
+											height={0}
+											sizes="100vw"
+											style={{ width: '100%', height: 'auto' }}
+										/>
+									</div>
+									<div className="flex flex-col sm:flex-row justify-center gap-4 mx-8">
+										<a href="https://drive.google.com/file/d/1SCH6CilwX9Tlhzdha3L1zRWPJH70Ftvx/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-white transition-colors px-4 py-4 rounded-md hover:bg-gray-800 flex"><Image
+											priority
+											src='/video-light.svg'
+											alt="Video Icon"
+											width={15}
+											height={15}
+										/>&nbsp;Project (Video)
+										</a>
+										<a href="https://drive.google.com/file/d/1LTZm2fd_9FFxEwgh62dVKOWKLId7NgT0/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-white transition-colors px-4 py-4 rounded-md hover:bg-gray-800 flex"><Image
+											priority
+											src='/video-light.svg'
+											alt="Video Icon"
+											width={15}
+											height={15}
+										/>&nbsp;Code Walkthrough
+										</a>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>
