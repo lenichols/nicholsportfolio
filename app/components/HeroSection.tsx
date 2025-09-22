@@ -15,7 +15,7 @@ export default function HeroSection() {
 
 			<div className="relative z-10 min-h-screen flex flex-col items-center justify-center pt-8 md:pt-0 w-full">
 				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8 md:mb-2">
-					<div className="w-24 h-24 relative rounded-full mx-auto mt-20 overflow-hidden">
+					<div className="w-24 h-24 relative rounded-full mx-auto lg:mt-20 overflow-hidden">
 						<Image
 							src="/shauna.jpg" 
 							alt="Profile Picture"

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'La Shauna E. Nichols - Frontend Focused FullStack Software Developer',
+	title: 'La Shauna E. Nichols - Software Engineering Leadership (CTO)',
 	description:
 		'Welcome to my portfolio! I am a passionate frontend loving full-stack developer and engineering leader who bridges the gap between frontend and backend development. I speialize in creating complete web solutions, from beautiful user interfaces to robust server architectures.',
 	keywords: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 	authors: [{ name: 'La Shauna E. Nichols' }],
 	creator: 'La Shauna E. Nichols',
 	openGraph: {
-		title: 'La Shauna E. Nichols - Frontend Focused Full-Stack Developer Portfolio',
+		title: 'La Shauna E. Nichols - Software Engineering Leadership (CTO)',
 		description:
 			'Passionate frontend focused full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
 		url: 'https://lenicholsdev.com',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 				url: '/og.jpg',
 				width: 1200,
 				height: 630,
-				alt: 'La Shauna E. Nichols - Frontend FocusedFull-Stack Developer Portfolio',
+				alt: 'La Shauna E. Nichols - Software Engineering Leadership (CTO)',
 			},
 		],
 		locale: 'en_US',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'La Shauna E. Nichols - Frontend Focused Full-Stack Developer',
+		title: 'La Shauna E. Nichols - Software Engineering Leadership (CTO)',
 		description:
 			'Passionate frontend focused full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
 		creator: '@lenicholsdev',
