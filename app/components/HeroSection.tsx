@@ -46,12 +46,17 @@ export default function HeroSection() {
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-500/10 rounded-full text-red-400 text-xs md:text-sm">Java</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-green-500/10 rounded-full text-purple-300 text-xs md:text-sm">Go</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Kafka</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-rose-500/10 rounded-full text-rose-400 text-xs md:text-sm">C++</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-sky-300/10 rounded-full text-sky-400 text-xs md:text-sm">Bedrock</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-yellow-500/10 rounded-full text-yellow-300 text-xs md:text-sm">AI/ML</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-sky-500/10 rounded-full text-sky-300 text-xs md:text-sm">Snowflake</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-green-500/10 rounded-full text-green-300 text-xs md:text-sm">Cybersecurity</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-500/10 rounded-full text-red-300 text-xs md:text-sm">Risk Analysis</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-300 text-xs md:text-sm">CISSP</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-pink-500/10 rounded-full text-pink-300 text-xs md:text-sm">RUST</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-300 text-xs md:text-sm">Wireshark</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-indigo-300/10 rounded-full text-indigo-400 text-xs md:text-sm">Kubernetes</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Azure</span>
 					</div>
 				</motion.div>
 
