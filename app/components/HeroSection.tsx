@@ -15,22 +15,22 @@ export default function HeroSection() {
 
 			<div className="relative z-10 min-h-screen flex flex-col items-center justify-center pt-8 md:pt-0 w-full">
 				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8 md:mb-2">
-					<div className="w-24 h-24 relative rounded-full mx-auto lg:mt-20 overflow-hidden">
-						<Image
-							src="/shauna.jpg" 
-							alt="Profile Picture"
-							layout="fill"
-							objectFit="cover"
-							className="rounded-full"
-						/>
-					</div>
+<div className="w-32 h-32 sm:w-28 md:w-24 relative rounded-full mx-auto lg:mt-20 overflow-hidden">
+  <Image
+    src="/shauna.jpg" 
+    alt="Profile Picture"
+    fill
+    style={{ objectFit: 'cover' }}
+    className="rounded-full"
+  />
+</div>
 					<div className="space-y-3 md:space-y-4 mb-6 md:mb-2">
 						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500">
 							La Shauna E. Nichols
 						</h1>
-						<h2 className="text-2xl md:text-4xl font-bold text-white">Software Engineering Leadership (CTO)</h2>
+						<h2 className="text-2xl md:text-4xl font-bold text-white">Cybersecurity & Engineering Leader | SOC 2 | Cloud Security | GRC | Fractional CTO</h2>
 						<p className="text-lg md:text-xl text-gray-400 mx-auto">
-							I craft end-to-end solutions with 10+ years of experience building scalable applications and leading development teams.
+							Seasoned technology executive with 15+ years building secure, compliant, and scalable SaaS platforms. Now focused on Security & Risk Strategy, Risk management, and Embedding security into product and infrastructure from the ground up.
 						</p>
 						<p className="text-base md:text-lg text-gray-500 mx-auto">
 							Previously Head of Engineering at <span className="text-yellow-600"><a href="https://scratch.org" target='_blank'>Scratch</a></span> and Lead Fullstack Engineer at{' '}
@@ -50,7 +50,7 @@ export default function HeroSection() {
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-sky-300/10 rounded-full text-sky-400 text-xs md:text-sm">Bedrock</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-yellow-500/10 rounded-full text-yellow-300 text-xs md:text-sm">AI/ML</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-sky-500/10 rounded-full text-sky-300 text-xs md:text-sm">Snowflake</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-green-500/10 rounded-full text-green-300 text-xs md:text-sm">Cybersecurity</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-green-500/10 rounded-full text-green-300 text-xs md:text-sm">Cybersecurity Leadership</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-500/10 rounded-full text-red-300 text-xs md:text-sm">Risk Analysis</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-300 text-xs md:text-sm">CISSP</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-pink-500/10 rounded-full text-pink-300 text-xs md:text-sm">RUST</span>
