@@ -7,10 +7,14 @@ import ContactSection from './components/ContactSection';
 import BioSection from './components/BioSection';
 import UpworkSection from './components/UpworkSection';
 import CybersecurityExperienceSection from './components/CybersecurityExperienceSection';
+import SystemArchitecture from './components/SystemArchitecture';
+import SecureAppDevelopment from './components/SecureAppDevelopment';
 
 export default function FullStackPortfolio() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [selectedStack, setSelectedStack] = useState<'frontend' | 'backend' | 'devops' | 'strategy' | 'cybersecurity' | null>(null);
+
 
 	// Optional: Add a subtle background when user scrolls
 	useEffect(() => {
@@ -88,15 +92,27 @@ export default function FullStackPortfolio() {
 			<section id="bio">
 				<BioSection />
 			</section>
-			<section id="upwork">
-				<UpworkSection />
+
+			<section id="cybersecurity">
+				<SecureAppDevelopment />
 			</section>
-			<section id="projects">
-				<ProjectsSection />
-			</section>
+
 			<section id="cybersecurity">
 				<CybersecurityExperienceSection />
 			</section>
+			
+
+			<section id="architecture">
+				<SystemArchitecture selectedStack={selectedStack} setSelectedStack={setSelectedStack} />
+			</section>
+			
+			<section id="projects">
+				<ProjectsSection />
+			</section>
+			<section id="upwork">
+				<UpworkSection />
+			</section>
+			
 			<section id="contact">
 				<ContactSection />
 			</section>

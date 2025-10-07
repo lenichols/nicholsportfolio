@@ -1,11 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+// import { useState } from 'react';
 import Image from 'next/image';
 
 export default function HeroSection() {
-	const [selectedStack, setSelectedStack] = useState<'frontend' | 'backend' | 'devops' | 'strategy' | 'cybersecurity' | null>(null);
 
 	return (
 		<section className="min-h-screen relative overflow-hidden py-24 md:py-0">
@@ -26,15 +25,19 @@ export default function HeroSection() {
 				</div>
 				<div className="space-y-3 md:space-y-4 mb-6 md:mb-2">
 						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500">
-							La Shauna E. Nichols
+							La Shauna E. Nichols, MS-IT
 						</h1>
-						<h2 className="text-2xl md:text-4xl font-bold text-white">Cybersecurity & Engineering Leader | SOC 2 | Cloud Security | GRC | Fractional CTO</h2>
+						
+						<h2 className="text-2xl md:text-4xl font-bold text-white">Engineering Leadership | Application Security | Cloud Security | Risk Management | SOC 2 | Fractional CTO</h2>
+						<div className="text-slate-300 text-sm font-medium mb-8">
+							Currently finishing my <span className="text-green-300">Masters in Computer Science</span> Degree with an emphasis on <strong>Cybersecurity</strong> online at <i><span className="text-red-300"><a href="https://www.coloradotech.edu/degrees/masters/computer-science" target='_blank'>Colorado Technical University</a></span></i> (Expected Graduation 6/26).
+						</div>
 						<p className="text-lg md:text-xl text-gray-400 mx-auto">
 							Seasoned technology executive with 15+ years building secure, compliant, and scalable SaaS platforms. Now focused on Security & Risk Strategy, Risk management, and Embedding security into product and infrastructure from the ground up.
 						</p>
-						<p className="text-base md:text-lg text-gray-500 mx-auto">
+						<p className="text-base md:text-lg text-white mx-auto">
 							Previously Head of Engineering at <span className="text-yellow-600"><a href="https://scratch.org" target='_blank'>Scratch</a></span> and Lead Fullstack Engineer at{' '}
-							<span className="text-green-600"><a href="https://fabricfeed.io" target='_blank'>FabricFeed.io</a></span>
+							<span className="text-green-600"><a href="https://fabricfeed.io" target='_blank'>FabricFeed.io</a></span>. <strong className='text-white'>I build secure, scalable systems and guide teams toward security-first engineering practices.</strong>
 						</p>
 					</div>
 					<div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-4 mb-6 md:mb-8">
@@ -72,7 +75,7 @@ export default function HeroSection() {
 						Connect on LinkedIn
 					</a>
 					<a
-						href="/files/resume-2.pdf"
+						href="/files/resume.pdf"
 						target="_blank"
 						className="px-8 py-3 bg-black border border-gray-800 rounded-lg font-medium hover:bg-gray-900 transition-colors inline-flex items-center justify-center gap-2"
 					>
@@ -86,159 +89,6 @@ export default function HeroSection() {
 						</svg>
 						View My Resume
 					</a>
-				</div>
-
-				<div className="text-slate-300 text-sm font-medium mb-8">
-					Currently finishing my <span className="text-green-300">Masters in Computer Science</span> Degree with an emphasis on <strong>Cybersecurity</strong> online at <i><span className="text-red-300"><a href="https://www.coloradotech.edu/degrees/masters/computer-science" target='_blank'>Colorado Technical University</a></span></i> (Expected Graduation 6/26).
-				</div>
-
-				{/* Interactive System Architecture */}
-				<div className="w-full max-w-5xl mx-auto relative px-2 md:px-4">
-					<motion.div
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ delay: 0.3 }}
-						className="bg-gray-900/50 backdrop-blur-sm rounded-lg border border-gray-800 p-4 md:p-8"
-					>
-						<div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-							{/* Frontend Layer */}
-							<div
-								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'frontend' ? 'bg-blue-500/20 border-blue-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
-								}`}
-								onMouseEnter={() => setSelectedStack('frontend')}
-								onMouseLeave={() => setSelectedStack(null)}
-							>
-								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-blue-400">Frontend Development</h3>
-								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Modern React Architectures
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Performance Optimization
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Responsive & Interactive UIs
-									</li>
-								</ul>
-							</div>
-
-							{/* Backend Layer */}
-							<div
-								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'backend' ? 'bg-purple-500/20 border-purple-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
-								}`}
-								onMouseEnter={() => setSelectedStack('backend')}
-								onMouseLeave={() => setSelectedStack(null)}
-							>
-								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-purple-400">Backend Development</h3>
-								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										API Design & Development
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										Database Architecture
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										Real-time Systems
-									</li>
-								</ul>
-							</div>
-
-							{/* DevOps Layer */}
-							<div
-								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'devops' ? 'bg-teal-500/20 border-teal-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
-								}`}
-								onMouseEnter={() => setSelectedStack('devops')}
-								onMouseLeave={() => setSelectedStack(null)}
-							>
-								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-teal-400">DevOps & Cloud</h3>
-								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-										AWS Infrastructure
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-										CI/CD Pipelines
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-										Scalable Architecture
-									</li>
-								</ul>
-							</div>
-						</div>
-					</motion.div>
-				</div>
-
-				{/* Projects Section */}
-				<div className="w-full max-w-5xl mx-auto relative px-2 md:px-4">
-					<motion.div
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ delay: 0.3 }}
-						className="bg-gray-900/50 backdrop-blur-sm rounded-lg border border-gray-800 p-4 md:p-8"
-					>
-						<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-							{/* Cybersecurity */}
-							<div
-								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'cybersecurity' ? 'bg-yellow-500/20 border-yellow-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
-								}`}
-								onMouseEnter={() => setSelectedStack('cybersecurity')}
-								onMouseLeave={() => setSelectedStack(null)}
-							>
-								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-yellow-400">Cybersecurity</h3>
-								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										hreat Detection & Response
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Security Policy & Compliance
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Vulnerability Management
-									</li>
-								</ul>
-							</div>
-
-							{/* Strategy Layer */}
-							<div
-								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'strategy' ? 'bg-red-500/30 border-red-500/30' : 'bg-gray-800/30 hover:bg-gray-800/80 border-transparent'
-								}`}
-								onMouseEnter={() => setSelectedStack('strategy')}
-								onMouseLeave={() => setSelectedStack(null)}
-							>
-								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-red-400">Strategy (Enterprise & Startup)</h3>
-								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										Technical Roadmap & Architecture Alignment
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										Platform Scalability & Tech Debt Strategy
-									</li>
-									<li className="flex items-center gap-2">
-										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										Cloud Migration & Cost Optimization Strategy
-									</li>
-								</ul>
-							</div>							
-						</div>
-					</motion.div>
 				</div>
 			</div>
 		</section>

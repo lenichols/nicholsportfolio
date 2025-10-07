@@ -9,7 +9,7 @@ export default function ContactSection() {
 				<motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="space-y-8">
 					<h2 className="text-3xl font-bold">Professional References on Request!</h2>
 					<p className="text-gray-400 max-w-2xl mx-auto">
-						Looking for a frontend focused full-stack developer opportunities where I can architect and implement complete solutions! Let&apos;s discuss your project, company or needs.
+						I&apos;m currently open to Application Security Engineer, Cloud Security Engineer, and Security Program Lead opportunities where I can architect and implement complete solutions! Let&apos;s discuss your project, company or needs.
 					</p>
 
 					{/* Location */}

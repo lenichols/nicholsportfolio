@@ -1,41 +1,78 @@
 'use client';
 
 import { motion } from 'framer-motion';
-// import Image from 'next/image';
-// import ffIcon from "/ffeed.svg";
 
 export default function BioSection() {
-	return (
-		<section className="py-20 px-4">
-			<div className="max-w-6xl mx-auto">
-				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl font-bold mb-8 text-center">
-					Biography
-				</motion.h2>
+  const bioParagraphs = [
+    "La Shauna E. Nichols is a cybersecurity and software engineering leader with nearly two decades of experience designing, building, and securing enterprise-scale applications. She holds graduate degrees in Information Technology Management and Computer Science with a concentration in Cybersecurity.",
+    
+    "As a hands-on technical executive, she has led SOC 2 Type II readiness programs, architected secure multi-cloud environments (AWS & GCP), and embedded application security into engineering workflows using frameworks like ISO 27001, NIST, and CIS Controls.",
+    
+    "Previously Head of Infrastructure and Backend Engineering at Scratch—the world’s largest learn-to-code platform—she helped scale secure, resilient systems serving over 120 million users. She later served as CTO at WhoseYourLandlord (WYL), where she drove a security-by-design transformation across product and infrastructure.",
+    
+    "Today, she works as a Fractional CTO and Security Engineering Consultant, guiding startups and growth-stage companies through cloud security maturity, AppSec program development, and compliance readiness. She’s also a passionate advocate for equitable access to STEM education through her work with Calculated Genius and other nonprofit initiatives."
+  ];
 
-				<div className="space-y-16">
-					{/* FabricFeed Platform */}
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						className="rounded-xl overflow-hidden border border-gray-900"
-					>
-						<div className="p-8">
-							<div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
-								<div className="space-y-6">
-									<div>
-										<p className="text-slate-200 pb-8">
-											La Shauna E. Nichols, has nearly 20 years in Tech  Software Engineering field and has spent the last 15 years, designing and building enterprise applications at scale. She holds a graduate degree in Information Technology Management and is certified in Generative AI. As a self-taught software developer, La Shauna humbly began as a hybrid web developer in Oil & Gas then moved into software in HealthTech and Education, later working her way up to leading development teams for software initiatives both small and large. La Shauna is former Head of Infrastructure & Backend Engineering at Scratch, the world&#39;s largest learn-to-code platform, where she helped lead the teams that helped scale the platform to over 120 million users.</p>
-                                            <p className="text-slate-200">
-                                            Today, La Shauna is a Tech Lead and Fractional CTO. She left engineering as Chief Technology Officer at WYL, a New York Based startup, in June 2025. She operates as a hands-on leader and as a reliable technical resource to Startup Founders requiring system and software design expertise and she consults with companies on how to start and scale their application projects. La Shauna supports many STEM organizations and is the founder of one of the largest online software developer communities on the web. To add to the myriad of technical and community-driven work that she does, she is also an Executive Board Member at Chicago-based Calculated Genius who is sewing deep roots in STEM and Computer Science.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</motion.div>
-				</div>
-			</div>
-		</section>
-	);
+  return (
+    <section className="py-20 px-4">
+      <div className="max-w-5xl mx-auto">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400"
+        >
+          Professional Biography
+        </motion.h2>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-gray-900/40 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 md:p-10 shadow-lg"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr,240px] gap-8 items-start">
+            <div className="space-y-6">
+              {bioParagraphs.map((text, index) => (
+                <motion.p
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.15 }}
+                  className="text-slate-200 leading-relaxed text-base md:text-lg"
+                >
+                  {text}
+                </motion.p>
+              ))}
+            </div>
+
+            {/* Visual accent / future placeholder */}
+            <div className="hidden lg:block">
+              <div className="sticky top-24">
+                <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-gray-800 rounded-xl p-5">
+                  <div className="text-sm text-gray-400 mb-3">Core Focus Areas</div>
+                  <ul className="space-y-2 text-sm">
+                    {[
+                      'Cloud Security (AWS/GCP)',
+                      'SOC 2 & ISO 27001',
+                      'AppSec Program Design',
+                      'Fractional CTO Advisory',
+                      'Secure SaaS Architecture',
+                      'STEM Equity Advocacy'
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start">
+                        <span className="text-teal-400 mr-2 mt-0.5">•</span>
+                        <span className="text-gray-300">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
 }
