@@ -41,26 +41,39 @@ export default function HeroSection() {
 						</p>
 					</div>
 					<div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-4 mb-6 md:mb-8">
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">TypeScript</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">React & Next.js</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-400 text-xs md:text-sm">Node.js</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Python</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">AWS</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-500/10 rounded-full text-red-400 text-xs md:text-sm">Java</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-green-500/10 rounded-full text-purple-300 text-xs md:text-sm">Go</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Kafka</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-rose-500/10 rounded-full text-rose-400 text-xs md:text-sm">C++</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-sky-300/10 rounded-full text-sky-400 text-xs md:text-sm">Bedrock</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-yellow-500/10 rounded-full text-yellow-300 text-xs md:text-sm">AI/ML</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-sky-500/10 rounded-full text-sky-300 text-xs md:text-sm">Snowflake</span>
+						{/* Leadership & Strategy */}
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-300 text-xs md:text-sm">Fractional CTO</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-green-500/10 rounded-full text-green-300 text-xs md:text-sm">Cybersecurity Leadership</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-500/10 rounded-full text-red-300 text-xs md:text-sm">Risk Analysis</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-300 text-xs md:text-sm">CISSP</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-pink-500/10 rounded-full text-pink-300 text-xs md:text-sm">RUST</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-300 text-xs md:text-sm">Wireshark</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-indigo-300/10 rounded-full text-indigo-400 text-xs md:text-sm">Kubernetes</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-amber-500/10 rounded-full text-amber-300 text-xs md:text-sm">SOC 2</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-indigo-500/10 rounded-full text-indigo-300 text-xs md:text-sm">ISO 27001</span>
+
+						{/* Cloud & DevOps */}
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">AWS</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Azure</span>
-					</div>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-indigo-300/10 rounded-full text-indigo-400 text-xs md:text-sm">Kubernetes</span>
+
+						{/* Backend & Data */}
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-400 text-xs md:text-sm">Node.js</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Python</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-500/10 rounded-full text-red-400 text-xs md:text-sm">Java</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-green-500/10 rounded-full text-green-300 text-xs md:text-sm">Go</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-pink-500/10 rounded-full text-pink-300 text-xs md:text-sm">Rust</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-sky-500/10 rounded-full text-sky-300 text-xs md:text-sm">Snowflake</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Kafka</span>
+
+						{/* Security & Analysis Tools */}
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-300 text-xs md:text-sm">Wireshark</span>
+
+						{/* AI / Emerging Tech */}
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-yellow-500/10 rounded-full text-yellow-300 text-xs md:text-sm">AI/ML</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-sky-300/10 rounded-full text-sky-400 text-xs md:text-sm">Bedrock</span>
+
+						{/* Frontend (de-emphasized but present) */}
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">React & Next.js</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">TypeScript</span>
+						</div>
 				</motion.div>
 
 				<div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
