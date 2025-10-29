@@ -28,12 +28,12 @@ export default function HeroSection() {
 							La Shauna E. Nichols, MS-IT
 						</h1>
 						
-						<h2 className="text-2xl md:text-4xl font-bold text-white">Engineering Leadership | Application Security | Cloud Security | Risk Management | SOC 2 | Fractional CTO</h2>
+						<h2 className="text-2xl md:text-4xl font-bold text-white">Engineering Leadership | Application Development | Software & Cloud Architecture | Artificial Intelligence | Cloud Security | Fractional CTO</h2>
 						<div className="text-slate-300 text-sm font-medium mb-8">
-							Currently finishing my <span className="text-green-300">Masters in Computer Science</span> Degree with an emphasis on <strong>Cybersecurity</strong> online at <i><span className="text-red-300"><a href="https://www.coloradotech.edu/degrees/masters/computer-science" target='_blank'>Colorado Technical University</a></span></i> (Expected Graduation 6/26).
+							Currently finishing my <span className="text-green-300">Masters in Computer Science</span> online at <i><span className="text-red-300"><a href="https://www.coloradotech.edu/degrees/masters/computer-science" target='_blank'>Colorado Technical University</a></span></i> (Expected Graduation 6/26).
 						</div>
 						<p className="text-lg md:text-xl text-gray-400 mx-auto">
-							Seasoned technology executive with 15+ years building secure, compliant, and scalable SaaS platforms. Now focused on Security & Risk Strategy, Risk management, and Embedding security into product and infrastructure from the ground up.
+							Seasoned technology executive with 15+ years building secure, compliant, and scalable modern SaaS platforms.
 						</p>
 						<p className="text-base md:text-lg text-white mx-auto">
 							Previously Head of Engineering at <span className="text-yellow-600"><a href="https://scratch.org" target='_blank'>Scratch</a></span> and Lead Fullstack Engineer at{' '}
@@ -43,7 +43,7 @@ export default function HeroSection() {
 					<div className="flex flex-wrap justify-center gap-2 md:gap-3 mt-4 mb-6 md:mb-8">
 						{/* Leadership & Strategy */}
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-300 text-xs md:text-sm">Fractional CTO</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-green-500/10 rounded-full text-green-300 text-xs md:text-sm">Cybersecurity Leadership</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-green-500/10 rounded-full text-green-300 text-xs md:text-sm">Artificial Intelligence</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-500/10 rounded-full text-red-300 text-xs md:text-sm">Risk Analysis</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-300 text-xs md:text-sm">CISSP</span>
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-amber-500/10 rounded-full text-amber-300 text-xs md:text-sm">SOC 2</span>
