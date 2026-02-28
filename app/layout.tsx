@@ -1,86 +1,107 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Cormorant_Garamond, Outfit, JetBrains_Mono } from 'next/font/google';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
 import './globals.css';
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin'],
+const cormorant = Cormorant_Garamond({
+  variable: '--font-cormorant',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
-	subsets: ['latin'],
+const outfit = Outfit({
+  variable: '--font-outfit',
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+});
+
+const jetbrains = JetBrains_Mono({
+  variable: '--font-jetbrains',
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-	title: 'La Shauna E. Nichols - Software Engineering Leadership (CTO)',
-	description:
-		'Welcome to my portfolio! I am a passionate frontend loving full-stack developer and engineering leader who bridges the gap between frontend and backend development. I speialize in creating complete web solutions, from beautiful user interfaces to robust server architectures.',
-	keywords: [
-		'Full-Stack Developer',
-		'Software Engineer',
-		'Frontend Development',
-		'Backend Development',
-		'React',
-		'Next.js',
-		'Node.js',
-		'TypeScript',
-		'Database Design',
-		'API Development',
-		'Cloud Solutions',
-		'DevOps',
-		'System Architecture',
-		'Web Development',
-		'La Shauna E. Nichols',
-	],
-	authors: [{ name: 'La Shauna E. Nichols' }],
-	creator: 'La Shauna E. Nichols',
-	openGraph: {
-		title: 'La Shauna E. Nichols - Software Engineering Leadership (CTO)',
-		description:
-			'Application Security Engineer, Cloud Security Engineer, and Security Program Lead. Explore my projects and technical expertise across the entire development stack.',
-		url: 'https://lenicholsdev.com',
-		siteName: 'La Shauna E. Nichols - Portfolio',
-		images: [
-			{
-				url: '/og_image.png',
-				width: 1200,
-				height: 630,
-				alt: 'La Shauna E. Nichols - Software Engineering Leadership (CTO)',
-			},
-		],
-		locale: 'en_US',
-		type: 'website',
-	},
-	twitter: {
-		card: 'summary_large_image',
-		title: 'La Shauna E. Nichols - Software Engineering Leadership (CTO)',
-		description:
-			'Application Security Engineer, Cloud Security Engineer, and Security Program Lead. Explore my projects and technical expertise across the entire development stack.',
-		creator: '@lenicholsdev',
-		images: ['/og_image.png'],
-	},
-	robots: {
-		index: true,
-		follow: true,
-		googleBot: {
-			index: true,
-			follow: true,
-			'max-video-preview': -1,
-			'max-image-preview': 'large',
-			'max-snippet': -1,
-		},
-	},
+  metadataBase: new URL('https://lenicholsdev.com'),
+  title: {
+    default: 'La Shauna E. Nichols - CTO | Software & App Architect | Technical Instructor',
+    template: '%s | La Shauna E. Nichols',
+  },
+  description:
+    'Engineering leader with 15+ years of experience building secure, scalable web and mobile platforms. CTO, Software & App Architect, and Technical Instructor.',
+  keywords: [
+    'CTO',
+    'Software Architect',
+    'Technical Instructor',
+    'Cybersecurity',
+    'Full-Stack Developer',
+    'Mobile App Development',
+    'Hybrid Apps',
+    'React Native',
+    'Cloud Security',
+    'React',
+    'Next.js',
+    'AWS',
+    'La Shauna E. Nichols',
+  ],
+  authors: [{ name: 'La Shauna E. Nichols' }],
+  creator: 'La Shauna E. Nichols',
+  openGraph: {
+    title: 'La Shauna E. Nichols - CTO | Software & App Architect | Technical Instructor',
+    description:
+      'Engineering leader with 15+ years building secure, scalable SaaS platforms. Explore case studies and technical expertise.',
+    url: 'https://lenicholsdev.com',
+    siteName: 'La Shauna E. Nichols',
+    images: [
+      {
+        url: '/og_image.png',
+        width: 1200,
+        height: 630,
+        alt: 'La Shauna E. Nichols - CTO | Software Architect | Technical Instructor',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'La Shauna E. Nichols - CTO | Software & App Architect | Technical Instructor',
+    description:
+      'Engineering leader with 15+ years building secure, scalable SaaS platforms.',
+    creator: '@lenicholsdev',
+    images: ['/og_image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body
+        className={`${cormorant.variable} ${outfit.variable} ${jetbrains.variable} antialiased`}
+      >
+        <Navbar />
+        <main className="min-h-screen pt-16">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
 }

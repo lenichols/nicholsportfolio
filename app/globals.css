@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	background-color: #000;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-charcoal font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .dot-grid {
+    background-image: radial-gradient(circle, #e8e2dc 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
 }
