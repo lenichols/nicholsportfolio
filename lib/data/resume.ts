@@ -53,7 +53,7 @@ export const resumeExperience: ResumeExperience[] = [
     bullets: [
       'Fractional CTO for venture-backed startups, accelerating product development and go-to-market.',
       'Performed technical due diligence to de-risk investments and evaluate engineering capabilities.',
-      'Advised on engineering strategy, roadmaps, and team scaling during growth phases.',
+      'Advised on engineering strategy, roadmaps and team scaling during growth phases.',
       'Coordinated AI/ML and cloud innovation across portfolio companies.',
     ],
   },
@@ -65,7 +65,7 @@ export const resumeExperience: ResumeExperience[] = [
     bullets: [
       'Modernized legacy infrastructure using Django, React, Node.js, Kubernetes.',
       'Managed backend/data pipelines for 120M+ user platform.',
-      'Led 18-person technical team across QA, DevOps, and software engineering.',
+      'Led 18-person technical team across QA, DevOps and software engineering.',
       'Spearheaded cloud migration to AWS & GCP, boosting system uptime.',
     ],
   },
@@ -75,7 +75,7 @@ export const resumeExperience: ResumeExperience[] = [
     role: 'Senior Software Engineer',
     period: 'October 2017 – December 2020',
     bullets: [
-      'Developed enterprise apps with Angular, Java, and Spring Boot, Node + ExpressJS.',
+      'Developed enterprise apps with Angular, Java and Spring Boot, Node + ExpressJS.',
       'Re-architected APIs for performance and security, enhancing scalability.',
       'Mentored 2+ junior devs in Agile coding practices and test-driven development.',
     ],
@@ -99,7 +99,7 @@ export const resumeExperience: ResumeExperience[] = [
     bullets: [
       'Delivered cross-platform apps for PG&E and major utilities (iOS, Android, web).',
       'Built responsive web UIs and backend services in JavaScript and C#.',
-      'Deployed 2+ iOS apps for field services adopted by PG&E, Southwest Gas, Nevada Power, and other major utility companies.',
+      'Deployed 2+ iOS apps for field services adopted by PG&E, Southwest Gas, Nevada Power and other major utility companies.',
     ],
   },
   {
@@ -121,9 +121,9 @@ export const resumeExperience: ResumeExperience[] = [
     note: 'Contract via Volt',
     bullets: [
       'Provided frontline technical support for macOS and iOS devices in a high-volume environment.',
-      'Diagnosed and resolved hardware and software issues on Macs, iPads, and networking equipment.',
-      'Assisted users with operating system upgrades, device configurations, and data migrations.',
-      'Gained foundational experience with system imaging, remote troubleshooting tools, and Apple enterprise support protocols.',
+      'Diagnosed and resolved hardware and software issues on Macs, iPads and networking equipment.',
+      'Assisted users with operating system upgrades, device configurations and data migrations.',
+      'Gained foundational experience with system imaging, remote troubleshooting tools and Apple enterprise support protocols.',
     ],
   },
 ];

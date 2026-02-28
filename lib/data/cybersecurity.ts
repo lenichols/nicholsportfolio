@@ -17,7 +17,7 @@ export const cybersecurityEntries: CybersecurityEntry[] = [
     metadata: 'Kaskara, Scratch, WYL · Multi-account environments',
     accent: 'teal',
     bullets: [
-      'Designed VPCs with private/public subnets, NAT gateways, and hardened security groups',
+      'Designed VPCs with private/public subnets, NAT gateways and hardened security groups',
       'Enforced least-privilege IAM roles and SSO integration (Okta)',
       'Configured encryption-at-rest (KMS) and in-transit (TLS 1.3, WAF, Cloudflare)',
       'Automated compliance checks using AWS Config and GCP Security Command Center',

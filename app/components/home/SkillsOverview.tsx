@@ -42,7 +42,7 @@ export default function SkillsOverview() {
         <FadeInView>
           <SectionHeading
             title="Core Capabilities"
-            subtitle="Technical expertise spanning security, architecture, and full-stack development."
+            subtitle="Technical expertise spanning security, architecture and full-stack development."
           />
         </FadeInView>
 

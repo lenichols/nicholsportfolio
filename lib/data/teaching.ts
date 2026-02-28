@@ -19,21 +19,21 @@ export const teachingEntries: TeachingEntry[] = [
     title: 'Full-Stack Web Development',
     organization: 'Fundamentals to Production',
     description:
-      'Comprehensive course covering React, Node.js, databases, and deployment — from local development to cloud infrastructure.',
+      'Comprehensive course covering React, Node.js, databases and deployment from local development to cloud infrastructure.',
     type: 'course',
   },
   {
     title: 'Cloud Security Essentials',
     organization: 'AWS & GCP Security Patterns',
     description:
-      'Hands-on workshop covering VPC design, IAM policies, encryption strategies, and compliance frameworks for cloud-native applications.',
+      'Hands-on workshop covering VPC design, IAM policies, encryption strategies and compliance frameworks for cloud-native applications.',
     type: 'course',
   },
   {
     title: 'Introduction to Cybersecurity',
     organization: 'Security Fundamentals',
     description:
-      'Entry-level course covering threat modeling, OWASP Top 10, secure coding practices, and security tooling basics.',
+      'Entry-level course covering threat modeling, OWASP Top 10, secure coding practices and security tooling basics.',
     type: 'course',
   },
 ];

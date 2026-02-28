@@ -47,7 +47,7 @@ export default function ContactPage() {
       <FadeInView>
         <SectionHeading
           title="Get in Touch"
-          subtitle="Open to CTO advisory, security consulting, and technical instruction opportunities."
+          subtitle="Open to CTO advisory, security consulting and technical instruction opportunities."
         />
       </FadeInView>
 

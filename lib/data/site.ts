@@ -5,7 +5,7 @@ export const siteConfig: SiteConfig = {
   title: 'La Shauna E. Nichols - CTO | Software Architect | Technical Instructor',
   tagline: 'CTO | Software & App Architect | Technical Instructor',
   summary:
-    'Engineering leader with 15+ years of experience building secure, scalable web and mobile platforms — from hybrid apps to enterprise SaaS — and guiding teams toward security-first engineering practices.',
+    'Engineering leader with 15+ years of experience building secure, scalable web and mobile platforms and guiding teams toward security-first engineering practices.',
   url: 'https://lenicholsdev.com',
   location: 'Hayward, CA',
   resumeUrl: '/files/resume.pdf',

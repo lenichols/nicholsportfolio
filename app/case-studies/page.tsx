@@ -25,7 +25,7 @@ export default function CaseStudiesIndex() {
       <FadeInView>
         <SectionHeading
           title="Case Studies"
-          subtitle="In-depth explorations of architecture, engineering decisions, and measurable outcomes."
+          subtitle="In-depth explorations of architecture, engineering decisions and measurable outcomes."
         />
       </FadeInView>
 

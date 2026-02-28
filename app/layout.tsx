@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: '%s | La Shauna E. Nichols',
   },
   description:
-    'Engineering leader with 15+ years of experience building secure, scalable web and mobile platforms. CTO, Software & App Architect, and Technical Instructor.',
+    'Engineering leader with 15+ years of experience building secure, scalable web and mobile platforms. CTO, Software & App Architect and Technical Instructor.',
   keywords: [
     'CTO',
     'Software Architect',

@@ -39,7 +39,7 @@ export const appProjects: AppProject[] = [
     tagline: 'Developer Portfolio Aggregator',
     role: 'Freelance Developer',
     highlights: [
-      'Built GitHub repository listing feature with OAuth, rate-limit handling, and caching',
+      'Built GitHub repository listing feature with OAuth, rate-limit handling and caching',
       'Created clean, filterable UI to showcase developer projects by language and stars',
       'Used Vercel Edge Functions for low-latency API responses',
     ],

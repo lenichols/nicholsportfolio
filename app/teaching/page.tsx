@@ -6,7 +6,7 @@ import { teachingEntries } from '@/lib/data/teaching';
 export const metadata: Metadata = {
   title: 'Teaching',
   description:
-    'La Shauna E. Nichols as a technical instructor — mentoring engineers, teaching coding fundamentals, and advocating for STEM equity.',
+    'La Shauna E. Nichols as a technical instructor. Mentoring engineers, teaching coding fundamentals and advocating for STEM equity.',
 };
 
 export default function TeachingPage() {

@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: 'Resume',
   description:
-    'Resume of La Shauna E. Nichols — strategic engineering leader with experience scaling teams and systems across software, infrastructure, and security domains.',
+    'Resume of La Shauna E. Nichols. Strategic engineering leader with experience scaling teams and systems across software, infrastructure and security domains.',
 };
 
 export default function ResumePage() {

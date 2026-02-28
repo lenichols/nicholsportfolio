@@ -10,7 +10,7 @@ import { siteConfig } from '@/lib/data/site';
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Learn about La Shauna E. Nichols — cybersecurity leader, software architect, and technical instructor with 15+ years of experience.',
+    'Learn about La Shauna E. Nichols. Cybersecurity leader, software architect and technical instructor with 15+ years of experience.',
 };
 
 export default function AboutPage() {

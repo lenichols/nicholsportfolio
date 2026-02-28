@@ -8,7 +8,7 @@ export const caseStudies: CaseStudy[] = [
     date: '2025-02',
     domains: ['frontend', 'backend', 'cloud', 'architecture'],
     summary:
-      'Built a full-stack textile management platform with real-time inventory tracking, custom data tables, and a cost-optimized AWS infrastructure achieving 99.99% uptime.',
+      'Built a full-stack textile management platform with real-time inventory tracking, custom data tables and a cost-optimized AWS infrastructure achieving 99.99% uptime.',
     featured: true,
     diagramPath: '/fabricfeed.drawio.svg',
     videoUrl:

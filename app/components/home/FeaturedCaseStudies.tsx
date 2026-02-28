@@ -13,7 +13,7 @@ export default function FeaturedCaseStudies() {
         <FadeInView>
           <SectionHeading
             title="Featured Case Studies"
-            subtitle="Deep dives into architecture, engineering decisions, and measurable outcomes."
+            subtitle="Deep dives into architecture, engineering decisions and measurable outcomes."
           />
         </FadeInView>
 
